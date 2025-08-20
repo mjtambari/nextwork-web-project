@@ -1,7 +1,7 @@
 <settings>
 <servers>
   <server>
-    <id>nextwork-nextwork-devops-cicd</id>
+    <id>nextwork-maven-central-store</id>
     <username>aws</username>
     <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
   </server>
@@ -9,14 +9,14 @@
 
 <profiles>
   <profile>
-    <id>nextwork-nextwork-devops-cicd</id>
+    <id>nextwork-maven-central-store</id>
     <activation>
       <activeByDefault>true</activeByDefault>
     </activation>
     <repositories>
       <repository>
-        <id>nextwork-nextwork-devops-cicd</id>
-        <url>https://nextwork-255041785932.d.codeartifact.us-west-2.amazonaws.com/maven/nextwork-devops-cicd/</url>
+        <id>nextwork-maven-central-store</id>
+        <url>https://nextwork-255041785932.d.codeartifact.us-west-2.amazonaws.com/maven/maven-central-store/</url>
       </repository>
     </repositories>
   </profile>
@@ -24,9 +24,9 @@
 
 <mirrors>
   <mirror>
-    <id>nextwork-nextwork-devops-cicd</id>
-    <name>nextwork-nextwork-devops-cicd</name>
-    <url>https://nextwork-255041785932.d.codeartifact.us-west-2.amazonaws.com/maven/nextwork-devops-cicd/</url>
+    <id>nextwork-maven-central-store</id>
+    <name>nextwork-maven-central-store</name>
+    <url>https://nextwork-255041785932.d.codeartifact.us-west-2.amazonaws.com/maven/maven-central-store/</url>
     <mirrorOf>*</mirrorOf>
   </mirror>
 </mirrors>
